@@ -21,11 +21,15 @@ class SearchBarinApp extends StatelessWidget {
               Icons.search,
               size: 30,
             ),
+            SizedBox(
+              width: 15,
+            ),
             Expanded(
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: "search here...",
-                    hintStyle: TextStyle(fontSize: 20)),
+                  hintText: "search here...",
+                  hintStyle: TextStyle(fontSize: 20),
+                ),
               ),
             )
           ],
