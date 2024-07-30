@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 Widget appbarLeading = Container(
   width: 50,
@@ -8,7 +7,7 @@ Widget appbarLeading = Container(
     borderRadius: BorderRadius.circular(100),
     color: Colors.amber,
   ),
-  child: Icon(Icons.landscape),
+  child: const Icon(Icons.landscape),
 );
 
 Widget appbarTitle = Column(
@@ -17,11 +16,11 @@ Widget appbarTitle = Column(
     Text(
       "Delivery Address",
       style: TextStyle(
-        color: Color(0xff3B3636).withOpacity(0.47),
+        color: const Color(0xff3B3636).withOpacity(0.47),
         fontSize: 20,
       ),
     ),
-    Text(
+    const Text(
       "92 High Street , London",
       style: TextStyle(
           color: Color(0xff3B3636), fontSize: 20, fontWeight: FontWeight.w500),
@@ -39,7 +38,7 @@ List<Widget>? appbarAction = [
         borderRadius: BorderRadius.circular(100),
         color: Colors.amber,
       ),
-      child: Icon(Icons.local_grocery_store),
+      child: const Icon(Icons.local_grocery_store),
     ),
   )
 ];

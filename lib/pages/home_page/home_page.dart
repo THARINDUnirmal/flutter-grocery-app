@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grocery_app/pages/home_page/widget/appbar/app_bar.dart';
+import 'package:flutter_grocery_app/pages/home_page/widget/search_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,6 +16,14 @@ class HomePage extends StatelessWidget {
         ),
         title: appbarTitle,
         actions: appbarAction,
+      ),
+      body: const Column(
+        children: [
+          SizedBox(
+            height: 15,
+          ),
+          SearchBarinApp(),
+        ],
       ),
     );
   }
